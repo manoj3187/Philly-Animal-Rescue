@@ -1,0 +1,270 @@
+html {background-color: #e6e6e6; 
+    
+}
+
+#container {
+    z-index: -2;
+    opacity: .1;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+}
+
+#header {
+    height: 10vh;
+    width: 100vw;
+    background-color: white;    
+}
+#main{
+    height: 100vh;
+    width: 70vw;
+    background-color: white;
+    text-align: right;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid gray;
+
+
+}
+
+#lt{
+    height: 10vh;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 10% 40% 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#logo{
+    position: relative;
+    height: 11.3vh;
+    width: 7vw;
+    padding-left: 2vw;
+    cursor: pointer;
+
+}
+
+#title{
+    
+    margin-top: 0;
+    cursor: pointer;
+    font-size: 2.5vw;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: left;
+    color:#007185;
+    font-weight: 700;
+    padding-left: 2vw;
+    padding-top: 2.5vh;
+}
+
+#nav{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 3vw;
+    padding-top: 1.7vh;
+    
+}
+
+#tab{
+    
+    font-size: 1vmax;
+    font-family: 'Merriweather Sans', sans-serif;
+    color:black;
+    text-decoration: none;
+    padding-right: 0.7vw;
+}
+#current{
+    font-size: 1.2vmax;
+    font-family: 'Merriweather Sans', sans-serif;
+    color:black;
+    text-decoration: underline solid 3px black;
+    padding-right: 1.9vw;
+    font-weight: 700;
+
+}
+
+
+#mission{
+    font-size: 2vmin;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+#login{
+    height: 45vh;
+    width: 20vw;
+    background-color: #007185;
+    margin: 13vh auto;
+    text-align: center;
+}
+
+#emp{
+    font-family: 'Merriweather Sans', sans-serif;
+    color:white;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 3vh;
+    font-size: 1.5vw;
+}
+
+
+
+#user{
+    margin-top: 8vh;
+    height: 7%;
+    width: 80%;
+    background-color: #007185;
+    color:white;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: white solid 1px;
+
+    
+
+}
+
+#password{
+    margin-top: 2vh;
+    height: 7%;
+    width: 80%;
+    
+    background-color: #007185;
+    color:white;  
+    border:none; 
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: white solid 1px;
+
+
+}
+
+#user::placeholder,#password::placeholder{
+    color:white;
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+#bl{
+    height: 7%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    background-color:white;
+    color:black;
+    border: none;
+    border-radius: 2px;
+
+}
+
+#drexel{
+    color:white;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: left;
+    margin-left: 1.5vw;
+    margin-top: 3vh;
+    font-size: 0.8vw;
+
+
+}
+
+#dr{
+    color:white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.8vw;
+}
+
+#dialogue{
+    font-size: 1.7vmin;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 10vw 30vw;
+    margin: 35vh auto;
+    height: 20vh;
+    z-index: 200;
+    
+}
+
+#say{
+    height: 20vh;
+    width: 10vw;
+    margin-top: 3vh;
+    object-fit: cover; 
+}
+
+#info{
+    height: 8.5vw;
+    background-color: white;
+    width: 25vw;
+    margin-top: 3vh;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding-top: 5vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 3vh;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+
+    
+}
+
+#drr{
+    color:black;
+}
+
+#drr:visited{
+    color:black;
+
+}
+
+
+
+ul{
+    padding: 0;
+    list-style: none;
+    background: white;
+    text-align: left;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #333;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: black;
+    
+}
+ul li ul.dropdown{
+    min-width: 100%; /* Set width of the dropdown */
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block;	/* Display the dropdown */
+}
+ul li ul.dropdown li{
+    display: block;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Employee</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <script type="text/javascript" src="../javascript/two.js"></script>
+
+</head>
+
+<body onload="autocomplete1(document.getElementById('cls'), cnames)">
+    <div id="container">
+        <div id="header">
+            <div id="lt">
+                <img id="logo" src="../pictures/logos/logo.png" onclick="location.href='../index.html'">
+                <div id="title" onclick="location.href='../index.html'">Philly Animal Rescue</div> 
+                <div id= "nav"> 
+                    <ul>
+                        <li><a id="tab" href="../index.html">Home</a></li>
+                        <li><a id="tab" href="#">Community &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a id="tab" href="./shelters.html">Shelters</a></li>
+                                <li><a id="tab" href="./clinics.html">Clinics</a></li>
+                                <li><a id="tab" href="./lost_pets.html">Lost pets</a></li>
+                                <li><a id="tab" href="./found_pets.html">Found pets</a></li>
+                                
+                            </ul></li>
+                        <li>
+                            <a id="tab" href="#">Rescue &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a id="tab" href="./report.html">Report</a></li>
+                                <li><a id="tab" href="./adopt.html">Adopt</a></li>
+                                <li><a id="tab" href="./foster.html">Foster</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="tab" href="./employee.html">Employee</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+        <div id="main">
+            <div id="mission">
+                "Helping Animals Find Their Forever Homes"
+            </div>
+
+            <div id="clinic">
+                Vet clinics in Philadelphia
+            </div>
+
+            <div id="autoone">   
+            
+                <div id="clinicsearch">
+                    <input id="cls" type="text" placeholder="Start typing">
+                    <button id="shellbutton1" onclick = "return API.fillcl()">Search</button>
+                    <button id="shellbutton2" onclick="return clins11()">View All Shelters</button>
+                    
+                </div>
+    
+                <div id=aone>
+                    
+                </div>
+    
+            </div>
+
+            <div id="filter">
+                <input type="text" id="filenterc" placeholder="Enter zip code">
+                <button id="shellbutton3" onclick = "return API.fillczip()">Filter</button>
+            </div>
+
+
+            <div id= shellresults1>
+            </div>
+
+            <div id="footer">
+               
+                &#169;2021 Philly Animal Rescue. All rights reserved.
+            </div>
+        </div>
+        </div>
+
+       
+    </body>

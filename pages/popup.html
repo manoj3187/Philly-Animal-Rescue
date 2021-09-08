@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+    <link rel="stylesheet" href="../stylesheets/popup.css">
+    <script type="text/javascript" src="../javascript/par.js"></script>
+
+</head>
+
+<body onclick="location.href='./employee.html'">
+    <div id="container">
+        <div id="header">
+            <div id="lt">
+                <img id="logo" src="../pictures/logos/logo.png" onclick="location.href='../index.html'">
+                <div id="title">Philly Animal Rescue</div> 
+                <div id= "nav">
+                    <ul>
+                        <li><a id="tab" href="#">Home</a></li>
+                        <li><a id="tab" href="#">Community &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a id="tab" href="#">Shelters</a></li>
+                                <li><a id="tab" href="#">Clinics</a></li>
+                                <li><a id="tab" href="#">Lost pets</a></li>
+                                <li><a id="tab" href="#">Found pets</a></li>
+
+                            </ul></li>
+                        <li>
+                            <a id="tab" href="#">Rescue &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a id="tab" href="#">Report</a></li>
+                                <li><a id="tab" href="#">Adopt</a></li>
+                                <li><a id="tab" href="#">Foster</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="tab" href="#">Employee</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="mission">
+                "Helping Animals Find Their Forever Homes"
+            </div>
+
+            <div id="login">
+                <div id="emp">
+                    Employee Login
+                </div>
+                
+                
+                    <input type="text" id="user" placeholder="Enter username">
+                    <input type="text" id="password" placeholder="Enter password">
+                    <button id="bl" onclick="return API.elogin()">Login</button>
+
+                <div id="drexel">
+                    Student or Instructor of Drexel? <a href="#" id="dr">Click here</a>
+                </div>
+                
+               
+            </div>
+        </div>
+        </div>
+
+        <div id="dialogue">
+            <img id="say" src="../pictures/logos/dialogue.png">
+            <div id="info">
+                Students and instructors of INFO 552, Drexel University can login using the following user credentials format:<br> <br>
+            <strong>Username:</strong> full drexel email address<br>
+                <strong>Password:</strong> lastName_firstName <br>
+                (see class roster on Blackboard)
+                <br><br>
+                <a id= "drr" href="./employee.html">Back to Login</a>
+            </div>
+        </div>
+    </body>

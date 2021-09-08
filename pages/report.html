@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <script type="text/javascript" src="../javascript/two.js"></script>
+
+</head>
+
+<body onload="autocomplete(document.getElementById('searchField'), animals)">
+    <div id="container">
+        <div id="header">
+            <div id="lt">
+                <img id="logo" src="../pictures/logos/logo.png" onclick="location.href='../index.html'">
+                <div id="title" onclick="location.href='../index.html'">Philly Animal Rescue</div> 
+                <div id= "nav">
+                    <ul>
+                        <li><a id="tab" href="../index.html">Home</a></li>
+                        <li><a id="tab" href="#">Community &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a id="tab" href="./shelters.html">Shelters</a></li>
+                                <li><a id="tab" href="./clinics.html">Clinics</a></li>
+                                <li><a id="tab" href="./lost_pets.html">Lost pets</a></li>
+                                <li><a id="tab" href="./found_pets.html">Found pets</a></li>
+                                
+                            </ul></li>
+                        <li>
+                            <a id="tab" href="#">Rescue &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a id="tab" href="./report.html">Report</a></li>
+                                <li><a id="tab" href="./adopt.html">Adopt</a></li>
+                                <li><a id="tab" href="./foster.html">Foster</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="tab" href="./employee.html">Employee</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+        <div id="main">
+            <div id="mission">
+                "Helping Animals Find Their Forever Homes"
+            </div>
+
+            <div id="shell">
+                Report Stray Animals, Lost/Found Pets
+            </div>
+            <div id="tipsfound">
+                <b>Lost a pet? See all the found pets <a href="./found_pets.html">here</a></b><br>
+                <b>Found a pet? See all the lost pets <a href="./lost_pets.html">here</a></b> <br><br>
+                <b>Fill out the form below to file a report:</b>
+
+            </div>
+
+            <div id="reportform">
+                Report Type<sup>*</sup>: <br>
+                <select id="typer1" >
+                    <option value="starter" selected>Select </option>
+                    <option value="volvo">Stray</option>
+                    <option value="saab">Lost</option>
+                    <option value="fiat">Found</option>
+                  </select>
+                <br><br>
+
+                Name<sup>*</sup>: <br>
+                <input id="ri1" type="text" placeholder="First"> <input id="ri3" type="text" placeholder="Last">
+                <br><br>
+
+                Phone<sup>*</sup>: <br>
+                <input id="ri2" type="text" placeholder="(xxx)xxx-xxxx">
+                <br><br>
+
+                Email<sup>*</sup>: <br>
+                <input id="ri4" type="text" placeholder="xyz@example.com">
+                <br><br>
+
+                Animal Type<sup>*</sup>: <br>
+                <select id="typer2" >
+                    <option value="starter" selected>Select </option>
+                    <option value="volvo">Cat</option>
+                    <option value="saab">Dog</option>
+                    <option value="fiat">Other</option>
+                  </select>
+                <br><br>
+
+                Upload a photo of the animal<sup></sup>: <br>
+                <input id="ri5" type="file" accept="image/png, image/jpeg">
+                <br><br>
+
+                Description<sup>*</sup>: <br>
+                <input id="rii" type="text" placeholder="animal size, approx age, friendly/aggressive etc">
+                <br><br><br>
+                  <button id="shellbutton4" onclick="report1()">Submit</button>
+            </div>
+
+           
+            
+
+            <div id="footer">
+               
+
+                &#169;2021 Philly Animal Rescue. All rights reserved.
+            </div>
+        </div>
+        </div>
+
+       
+    </body>
